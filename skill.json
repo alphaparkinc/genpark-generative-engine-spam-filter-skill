@@ -1,0 +1,32 @@
+{
+  "name": "genpark-generative-engine-spam-filter-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Audit copy to check for over-optimized GEO keywords to prevent spam blocklisting.",
+  "author": "genpark",
+  "category": "seo",
+  "tags": [
+    "seo",
+    "spam-filter",
+    "geo",
+    "copywriting",
+    "compliance"
+  ],
+  "inputs": {
+    "text_copy": {
+      "type": "string",
+      "description": "Marketing text copywriting."
+    }
+  },
+  "outputs": {
+    "spam_score": {
+      "type": "integer",
+      "description": "Over-optimization risk score (0 to 100)."
+    },
+    "is_safe": {
+      "type": "boolean",
+      "description": "True if score stays below penalty thresholds."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
